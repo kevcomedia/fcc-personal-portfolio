@@ -4,85 +4,92 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
   </head>
-  <body>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <body class="bg-zinc-100">
+    <nav id="navbar" class="fixed w-full bg-sky-700 text-white px-3 shadow-md h-12 z-10">
+      <ul class="flex justify-center sm:justify-end sm:mr-16">
+        <li><a class="inline-block px-2 py-3 hover:bg-red-400 focus:bg-red-400 focus:outline-none" href="#welcome-section">About</a></li>
+        <li><a class="inline-block px-2 py-3 hover:bg-red-400 focus:bg-red-400 focus:outline-none" href="#projects">Projects</a></li>
+        <li><a class="inline-block px-2 py-3 hover:bg-red-400 focus:bg-red-400 focus:outline-none" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div id="welcome-section">
-      <h1>freeCodeCamp Portfolio</h1>
+    <div id="welcome-section" class="h-screen px-8 flex justify-center items-center bg-sky-500 bg-gradient-to-br from-sky-300 to-blue-700">
+      <h1 class="font-bold text-3xl text-white drop-shadow-xl md:text-4xl lg:text-5xl">freeCodeCamp Portfolio</h1>
     </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li class="project-tile">
-          <a href="#" target="_blank">
-            <div>
+    <section id="projects" class="pt-16 px-6 pb-8 container mx-auto text-zinc-800">
+      <h2 class="text-center font-semibold text-2xl mb-4">Projects</h2>
+      <ul class="grid gap-4 md:gap-6 justify-items-center items-end text-black sm:grid-cols-2 lg:grid-cols-3">
+        <li class="project-tile w-full max-w-[423px]">
+          <a class="flex flex-col text-center bg-amber-300 hover:bg-amber-400 focus:bg-amber-400 border border-gray-300 rounded-lg overflow-hidden drop-shadow-lg" href="#" target="_blank">
               <img
+                class="w-full max-w-[423px] h-full bg-white"
                 src="images/tribute-page.png"
                 alt="Tribute Page thumbnail"
                 width="423"
                 height="240"
               />
-            </div>
+            <span class="py-4">
             Tribute Page
+            </span>
           </a>
         </li>
         <li class="project-tile">
-          <a href="#" target="_blank">
-            <div>
+          <a class="flex flex-col text-center bg-amber-300 hover:bg-amber-400 focus:bg-amber-400 border border-gray-300 rounded-lg overflow-hidden drop-shadow-lg" href="#" target="_blank">
               <img
+                class="w-full max-w-[423px] h-full bg-white"
                 src="images/survey-form.png"
                 alt="Survey Form thumbnail"
                 width="423"
                 height="240"
               />
-            </div>
+            <span class="py-4">
             Survey Form
+            </span>
           </a>
         </li>
         <li class="project-tile">
-          <a href="#" target="_blank">
-            <div>
+          <a class="flex flex-col text-center bg-amber-300 hover:bg-amber-400 focus:bg-amber-400 border border-gray-300 rounded-lg overflow-hidden drop-shadow-lg" href="#" target="_blank">
               <img
+                class="w-full max-w-[423px] h-full bg-white"
                 src="images/product-landing-page.png"
                 alt="Product Landing Page thumbnail"
                 width="423"
                 height="240"
               />
-            </div>
+            <span class="py-4">
             Product Landing Page
+            </span>
           </a>
         </li>
         <li class="project-tile">
-          <a href="#" target="_blank">
-            <div>
+          <a class="flex flex-col text-center bg-amber-300 hover:bg-amber-400 focus:bg-amber-400 border border-gray-300 rounded-lg overflow-hidden drop-shadow-lg" href="#" target="_blank">
               <img
+                class="w-full max-w-[423px] h-full bg-white"
                 src="images/technical-documentation-page.png"
                 alt="Technical Documentation Page thumbnail"
                 width="423"
                 height="240"
               />
-            </div>
+            <span class="py-4">
             Technical Documentation Page
+            </span>
           </a>
         </li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" class="bg-stone-900 text-zinc-300">
+      <div class="pt-16 px-6 pb-8 container mx-auto">
+      <h2 class="text-center font-semibold text-2xl mb-4">Contact</h2>
       <ul>
         <li><a href="#" target="_blank">GitHub</a></li>
         <li><a href="#" target="_blank" id="profile-link">freeCodeCamp</a></li>
         <li><a href="#" target="_blank">CodePen</a></li>
       </ul>
+      </div>
     </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
